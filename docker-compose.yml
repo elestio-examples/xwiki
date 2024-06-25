@@ -2,7 +2,7 @@ version: "3.3"
 
 services:
   web:
-    image: "xwiki:16.4.0-postgres-tomcat"
+    image: xwiki:${SOFTWARE_VERSION_TAG}
     restart: always
     depends_on:
       - db
